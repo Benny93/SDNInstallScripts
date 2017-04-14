@@ -12,8 +12,11 @@ Client
 
 ip r a 10.11.12.13 via <host-ip> dev eth0
 
-##Kernel changes
+# Kernel changes
+
 sudo modprobe configs
+
+
 show current settings
 
 cat /proc/config.gz | gunzip | grep -vP "^#" | grep -i _IP
