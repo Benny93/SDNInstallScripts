@@ -1,0 +1,1 @@
+ubuntu -t ubuntu@127.0.0.1 -p 2224 sudo shutdown -h now
