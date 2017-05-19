@@ -4,8 +4,8 @@ if1_name='eth1'
 
 if2_addr='00:00:00:00:01:09'
 if2_name='eth2'
-
-RULE_PATH='/etc/udev/rules.d/90-usb-ethernet.conf'
+FILE_TYPE='.rules'
+RULE_PATH='/etc/udev/rules.d/90-usb-ethernet'$FILE_TYPE
 
 if1_cmd='SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="'$if1_addr'", ATTR{dev_id}=="0x0", ATTR{type}=="1", NAME="'$if1_name'"'
 if2_cmd='SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="'$if2_addr'", ATTR{dev_id}=="0x0", ATTR{type}=="1", NAME="'$if2_name'"'
