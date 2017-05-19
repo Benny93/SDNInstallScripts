@@ -1,2 +1,2 @@
-cp .bash_alias ~
+cp .bash_aliases ~
 source ~/.bashrc
