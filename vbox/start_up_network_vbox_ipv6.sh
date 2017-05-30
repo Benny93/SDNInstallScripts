@@ -1,0 +1,9 @@
+VBoxManage modifyvm "router" --intnet2 "alpha"
+VBoxManage modifyvm "router" --intnet3 "beta"
+VBoxManage startvm "router" --type headless
+VBoxManage modifyvm "controller1" --intnet1 "beta"
+VBoxManage startvm "controller1" --type headless
+VBoxManage modifyvm "controller2" --intnet1 "beta"
+VBoxManage startvm "controller2" --type headless
+VBoxManage modifyvm "ofswitch" --intnet1 "alpha"
+VBoxManage startvm "ofswitch" --type headless

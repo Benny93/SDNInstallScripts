@@ -1,0 +1,5 @@
+127.0.0.1	localhost
+127.0.1.1	benny-VirtualBox
+192.168.1.42    maxwell
+192.168.1.64    faraday
+192.168.1.86    newton
