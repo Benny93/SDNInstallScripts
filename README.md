@@ -22,3 +22,7 @@ show current settings
 cat /proc/config.gz | gunzip | grep -vP "^#" | grep -i _IP
 
 CONFIG_IP_ROUTE_MULTIPATH=y
+
+
+## TODO
+- [ ] Remove RYU installation from repo 
